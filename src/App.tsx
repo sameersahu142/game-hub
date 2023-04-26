@@ -1,4 +1,5 @@
 import "./App.css";
+import Button from "./components/Button";
 import ListGroup from "./components/ListGroup";
 
 function App() {
@@ -15,6 +16,9 @@ function App() {
         heading="Cities"
         onSelectItem={handleSelectItem}
       />
+      <Button color="danger" onClick={() => console.log("Clicked")}>
+        Click Here
+      </Button>
     </div>
   );
 }
